@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorason Tours | Lake Bunyonyi & Gorilla Trekking</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <style>
+        @media (min-width: 900px) {
+            #weather-widget {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dorason<span>Tours</span></a>
+            <nav>
+                <div id="weather-widget" style="margin-right: 20px; display: none;"></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-home">
+        <!-- Bird Animation -->
+        <div class="bird-container">
+            <div class="bird"></div>
+        </div>
+
+        <div class="hero-content container">
+            <h1>Experience the Magic of Uganda</h1>
+            <p>Lake Bunyonyi • Gorilla Trekking • Cultural Encounters</p>
+
+            <!-- Booking Widget -->
+            <form class="booking-widget" action="contact.html">
+                <div class="input-group">
+                    <label>Activity</label>
+                    <select name="activity" required>
+                        <option>Gorilla Trekking</option>
+                        <option>Boat Cruise</option>
+                        <option>Bird Watching</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Travel Date</label>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="input-group">
+                    <label>Guests</label>
+                    <select name="guests" required>
+                        <option>1 Person</option>
+                        <option>Couple</option>
+                        <option>Group</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-widget">Check Availability</button>
+            </form>
+        </div>
+        <!-- Scroll Down Animation -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-scroll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Top Experiences</h2>
+                <p>Curated adventures in the Pearl of Africa</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/img/boat.jpg" class="card-img" alt="Boat">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lake Bunyonyi Cruise</h3>
+                        <p>Explore the 29 islands including Punishment Island on a relaxing boat ride.</p>
+                        <a href="activities.html" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/img/gorilla.jpg" class="card-img" alt="Gorilla">
+                    </div>
+                    <div class="card-body">
+                        <h3>Gorilla Trekking</h3>
+                        <p>Face-to-face encounters with Mountain Gorillas in Bwindi Impenetrable Forest.</p>
+                        <a href="activities.html" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/img/community.jpg" class="card-img" alt="Community">
+                    </div>
+                    <div class="card-body">
+                        <h3>Community Walk</h3>
+                        <p>Visit local schools, Batwa pygmies, and experience the real Ugandan culture.</p>
+                        <a href="community.html" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding" style="background: #f9f9f9;">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>What Our Travelers Say</h2>
+                <p>Read stories from the Dorason Family</p>
+            </div>
+            <div class="grid-3" id="testimonialsGrid">
+                <!-- Loaded Dynamically -->
+                <div class="card" style="padding: 20px; text-align: center; color: #777;">
+                    Loading reviews...
+                </div>
+            </div>
+
+            <!-- Submit Review Button -->
+            <div class="text-center" style="margin-top: 40px;">
+                <button class="btn-primary" onclick="window.location.href='contact.html#review'">Write a Review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/256773745912" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Dorason<span>Tours</span></h3>
+                <p>Your trusted local partner for authentic travel experiences in Southwestern Uganda.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="activities.html">Tours</a></li>
+                    <li><a href="community.html">Charity</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin/login.html" style="opacity: 0.5; font-size: 0.8rem;">Admin Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +256 773745912</p>
+                <p><i class="fas fa-envelope"></i> info@dorasontours.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kabale, Uganda</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dorason Tours. | <a href="terms.html">Terms & Conditions</a></p>
+        </div>
+    </footer>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>🍪 We use cookies to ensure you get the best experience on our website.</p>
+            <button id="acceptCookies" class="btn-accept">Accept</button>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="statusModal" class="custom-modal">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+            <h3 id="modalTitle">Success</h3>
+            <p id="modalMessage">Operation completed.</p>
+            <button class="btn-primary" style="margin-top: 20px;"
+                onclick="document.getElementById('statusModal').style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>

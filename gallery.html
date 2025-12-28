@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Dorason Tours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @media (min-width: 900px) {
+            #weather-widget {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dorason<span>Tours</span></a>
+            <nav>
+                <div id="weather-widget" style="margin-right: 20px; display: none;"></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header bg-gallery">
+        <div class="header-content">
+            <h1>Our Gallery</h1>
+            <p>Moments captured in time</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature & Lake</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid-3">
+                <div class="gallery-item" data-category="wildlife">
+                    <div class="card"><img
+                            src="https://images.unsplash.com/photo-1570535975790-25e2e8e97f26?auto=format&fit=crop&w=600"
+                            class="card-img"></div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <div class="card"><img
+                            src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600"
+                            class="card-img"></div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <div class="card"><img
+                            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600"
+                            class="card-img"></div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <div class="card"><img
+                            src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=600"
+                            class="card-img"></div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <div class="card"><img
+                            src="https://images.unsplash.com/photo-1548268770-4384dcc98eb7?auto=format&fit=crop&w=600"
+                            class="card-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Standard Footer -->
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Dorason<span>Tours</span></h3>
+                <p>Connecting travelers with Uganda.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin/login.html" style="opacity: 0.5; font-size: 0.8rem;">Admin Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>+256 700 000 000</p>
+                <p>info@dorasontours.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dorason Tours.</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

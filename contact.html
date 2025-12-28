@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Dorason Tours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dorason<span>Tours</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header bg-contact">
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <p>Start your journey today</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid-3" style="grid-template-columns: 1fr 1.5fr;">
+
+                <div style="background: var(--secondary); color: white; padding: 40px; border-radius: 10px;">
+                    <h3 style="margin-bottom: 20px; color: white;">Get In Touch</h3>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--accent); margin-right: 10px;"></i> Lake Bunyonyi, Kabale</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-phone"
+                            style="color: var(--accent); margin-right: 10px;"></i> +256 700 000 000</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-envelope"
+                            style="color: var(--accent); margin-right: 10px;"></i> info@dorasontours.com</p>
+
+                    <!-- Google Map Embed -->
+                    <div style="margin-top: 20px; border-radius: 5px; overflow: hidden;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.8!2d29.9248!3d-1.2926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd1d0d9c49021d%3A0x6295304720959f64!2sLake%20Bunyonyi!5e0!3m2!1sen!2sug!4v1700000000000"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 20px;">Send Us a Message</h3>
+                    <form class="contact-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="form-floating">
+                            <input type="text" placeholder=" " required>
+                            <label>Your Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" placeholder=" " required>
+                            <label>Your Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <select required>
+                                <option value="" disabled selected></option>
+                                <option>Gorilla Trekking</option>
+                                <option>Boat Cruise</option>
+                                <option>General Inquiry</option>
+                            </select>
+                            <label>Interested In?</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea rows="5" placeholder=" " required style="height: 120px;"></textarea>
+                            <label>Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Review Form Section -->
+                <div id="review"
+                    style="grid-column: 1 / -1; margin-top: 40px; border-top: 1px solid #ddd; padding-top: 40px;">
+                    <h3 style="margin-bottom: 20px; text-align: center;">Write a Review</h3>
+                    <p style="text-align: center; margin-bottom: 30px; color: #666;">Share your experience with other
+                        travelers.</p>
+
+                    <form class="review-form"
+                        style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px;">
+                        <div class="form-floating">
+                            <input type="text" name="client_name" placeholder=" " required>
+                            <label>Your Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <select name="rating" required>
+                                <option value="" disabled selected></option>
+                                <option value="5">⭐⭐⭐⭐⭐ (Excellent)</option>
+                                <option value="4">⭐⭐⭐⭐ (Good)</option>
+                                <option value="3">⭐⭐⭐ (Average)</option>
+                                <option value="2">⭐⭐ (Poor)</option>
+                                <option value="1">⭐ (Terrible)</option>
+                            </select>
+                            <label>Rating</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea name="content" rows="4" placeholder=" " required
+                                style="height: 120px; border: 1px solid #ccc;"></textarea>
+                            <label>Your Experience</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Review</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/256700000000" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Dorason<span>Tours</span></h3>
+                <p>Connecting travelers with Uganda.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>+256 700 000 000</p>
+                <p>info@dorasontours.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dorason Tours.</p>
+        </div>
+    </footer>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>

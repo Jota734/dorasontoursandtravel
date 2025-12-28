@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Activities | Dorason Tours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/map.css">
+    <style>
+        @media (min-width: 900px) {
+            #weather-widget {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Same as others) -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dorason<span>Tours</span></a>
+            <nav>
+                <div id="weather-widget" style="margin-right: 20px; display: none;"></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header bg-activities">
+        <div class="header-content">
+            <h1>Our Adventures</h1>
+            <p>Safaris • Cruises • Hiking</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid-3">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1544234057-0df75a74e5cb?auto=format&fit=crop&w=600"
+                        class="card-img">
+                    <div class="card-body">
+                        <h3>Lake Bunyonyi Boat Cruise</h3>
+                        <span class="card-price">From $20 / person</span>
+                        <p>A relaxing motorized canoe trip visiting the history-rich islands.</p>
+                        <a href="contact.html" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1582234031123-5e927c8d9e72?auto=format&fit=crop&w=600"
+                        class="card-img">
+                    <div class="card-body">
+                        <h3>Gorilla Trekking</h3>
+                        <span class="card-price">Permit + Guide Fees</span>
+                        <p>Track the majestic mountain gorillas in Bwindi Impenetrable Forest.</p>
+                        <a href="contact.html" class="btn-primary">Inquire</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1548268770-4384dcc98eb7?auto=format&fit=crop&w=600"
+                        class="card-img">
+                    <div class="card-body">
+                        <h3>Dugout Canoeing</h3>
+                        <span class="card-price">From $15 / person</span>
+                        <p>Paddle yourself or be paddled in a traditional tree-trunk canoe.</p>
+                        <a href="contact.html" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600"
+                        class="card-img">
+                    <div class="card-body">
+                        <h3>Vehicle Hire (4x4)</h3>
+                        <span class="card-price">From $70 / day</span>
+                        <p>Strong Land Cruisers with pop-up roofs for game viewing.</p>
+                        <a href="contact.html" class="btn-primary">Book Car</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=600"
+                        class="card-img">
+                    <div class="card-body">
+                        <h3>Bird Watching</h3>
+                        <span class="card-price">From $30 / person</span>
+                        <p>Spot over 200 species of birds with our expert ornithologists.</p>
+                        <a href="contact.html" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Missing card for even grid? optional -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="section-padding" style="background: #eef2f5;">
+        <div class="container text-center">
+            <div class="section-title">
+                <h2>Explore the Region</h2>
+                <p>Where your adventures take place</p>
+            </div>
+
+            <div class="map-container">
+                <!-- Using a placeholder static map image of SW Uganda - Replace with real nice topographic one -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Uganda_relief_location_map.jpg/800px-Uganda_relief_location_map.jpg"
+                    class="map-base" alt="Uganda Map">
+
+                <!-- Bwindi -->
+                <div class="map-pin safari" style="top: 80%; left: 18%;">
+                    <i class="fas fa-paw"></i>
+                    <div class="pin-tooltip">Bwindi Impenetrable Forest</div>
+                </div>
+
+                <!-- Bunyonyi -->
+                <div class="map-pin lake" style="top: 88%; left: 20%;">
+                    <i class="fas fa-water"></i>
+                    <div class="pin-tooltip">Lake Bunyonyi</div>
+                </div>
+
+                <!-- QENP -->
+                <div class="map-pin safari" style="top: 65%; left: 25%;">
+                    <i class="fas fa-binoculars"></i>
+                    <div class="pin-tooltip">Queen Elizabeth NP</div>
+                </div>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">*Locations are approximate for illustration.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer same as index -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Dorason<span>Tours</span></h3>
+                <p>Your trusted local partner.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin/login.html" style="opacity: 0.5; font-size: 0.8rem;">Admin Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>+256 700 000 000</p>
+                <p>info@dorasontours.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dorason Tours.</p>
+        </div>
+    </footer>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>

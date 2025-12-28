@@ -1,0 +1,12 @@
+{
+    "name": "dorason-tours",
+    "version": "1.0.0",
+    "description": "Dorason Tours Website with Netlify Functions",
+    "main": "index.html",
+    "dependencies": {
+        "@supabase/supabase-js": "^2.39.0"
+    },
+    "scripts": {
+        "start": "netlify dev"
+    }
+}
