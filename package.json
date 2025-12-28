@@ -4,7 +4,9 @@
     "description": "Dorason Tours Website with Netlify Functions",
     "main": "index.html",
     "dependencies": {
-        "@supabase/supabase-js": "^2.39.0"
+        "@supabase/supabase-js": "^2.39.0",
+        "@vitejs/plugin-react-swc": "^4.2.2",
+        "lovable-tagger": "^1.1.13"
     },
     "scripts": {
         "start": "netlify dev"
